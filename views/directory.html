@@ -1,23 +1,17 @@
 <div class="content">
-  <button ng-click="order = 'name'">Order by Name</button>
-  <button ng-click="order = 'belt'">Order by Belt</button>
+    <button ng-click="order = 'name'">Order by Name</button>
+    <button ng-click="order = 'belt'">Order by Belt</button>
 
-  <input type="text" ng-model="search" placeholder="Search for a ninja" />
-  <ul>
-    <li
-      ng-repeat="ninja in ninjas | orderBy: order | filter: search"
-      ng-show="ninja.available"
-    >
-      <!--images-->
-      <img
-        ng-src="{{ninja.thumb}}"
-        style="margin: -12px 10px 0 0; float: left; width: 50px"
-        ng-show="ninja.thumb"
-      />
-      <h3>{{ninja.name}} - {{ninja.rate | currency}}</h3>
-      <div class="remove" ng-click="removeNinja(ninja)">x</div>
-      <span class="belt" style="background: {{ninja.belt}}"
-        >{{ninja.belt}} belt</span
+    <input type="text" ng-model="search" placeholder="Search for a ninja" />
+    <ul>
+        <li ng-repeat="ninja in ninjas | orderBy: order | filter: search" ng-show="ninja.available">
+            <!--images-->
+            <img ng-src="{{ninja.thumb}}" style="margin: -12px 10px 0 0; float: left; width: 50px" ng-show="ninja.thumb" />
+            <h3>{{ninja.name}} - {{ninja.rate | currency}}</h3>
+            <div class="remove" ng-click="removeNinja(ninja)">x</div>
+            <span class="belt" style="background: {{ninja.belt}}">{{ninja.belt}} belt</span
+      >
+      <!--need to fix this bug-->
       >
     </li>
   </ul>
