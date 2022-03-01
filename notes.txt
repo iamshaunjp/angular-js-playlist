@@ -1,0 +1,51 @@
+1. What is angular?
+Angular is a MVC style JS framework for creating sinlge page, data driven apps. You can add content to the page without the need to refresh.
+Use 'views' (the V in MVC) to archive this.
+
+2. Features:
+-2 way data blining
+-templating
+-DOM interaction
+-filters
+-directives
+
+3. MVC
+MODEL:
+The model is data. ex. JSON, database.
+
+VIEW:
+-Display content & data to a user in a browser.
+-HTML
+-Use expresions to insert data into views. <html tag>{{data}}</html tag>.
+
+CONTROLLER:
+-Control the functionality of our views
+-Performs the interaction between our models and our views.
+-Different controllers for different areas in our application. 
+
+4. Commands
+Directives:
+-ng-app (everything inside this tag is part of angular)
+-ng-model (stores data)
+-ng-init (it allows us to initialize some data when the app loads)
+-ng-repeat (we can use to display all the items of an array at once ng-repeat="ninja in ninjas">)
+-ng-include (bring html from another file and use into your current view whenever you need it)
+-ng-show (show the elements) ! also hide the elements
+-ng-hide (hide the elements)
+-ng-click (allows to response to click events from the user on elements)
+-ng-submit ()
+-ng-view
+-you can also create personalized directives
+
+Expresions:
+-{{5 * 5}}
+
+5. Modules
+
+6. Controllers (are JS constructor function that is used to augment the angular scope)
+
+7. Filters: Change the display of how we output data to de user.
+
+8. ng-include (bring html from another file and use into your current view whenever you need it)
+
+9. Views and Routing

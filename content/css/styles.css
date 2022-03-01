@@ -1,13 +1,19 @@
-body{
+.orange {
+  color: orange;
+}
+
+body {
   font-family: Helvetica;
   margin: 0;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   margin: 0;
 }
 
-.belt{
+.belt {
   padding: 5px 10px;
   border-radius: 10px;
   margin-left: 5px;
@@ -16,84 +22,84 @@ h1,h2,h3{
   text-transform: uppercase;
 }
 
-#menu-bar{
+#menu-bar {
   background: crimson;
   color: #fff;
   padding: 10px;
 }
 
-#menu-bar h1{
+#menu-bar h1 {
   font-size: 24px;
   font-weight: normal;
   display: inline-block;
 }
 
-#menu-bar ul{
+#menu-bar ul {
   float: right;
   list-style-type: none;
   padding: 0;
   margin: 6px 0;
 }
 
-#menu-bar li{
+#menu-bar li {
   float: right;
   margin-left: 20px;
 }
 
-#menu-bar a{
-  color: #fff
+#menu-bar a {
+  color: #fff;
 }
 
-main{
+main {
   background: #eee;
   width: 80%;
   margin: 30px auto;
   border-radius: 10px;
 }
 
-.content{
+.content {
   padding: 20px;
 }
 
 .content button,
-.content input[type="submit"]{
+.content input[type='submit'] {
   background: #fff;
   padding: 10px;
   border-radius: 10px;
   cursor: pointer;
   color: #777;
   border: 0;
-  box-shadow: 2px 2px 2px rgba(20,20,20,0.1);
+  box-shadow: 2px 2px 2px rgba(20, 20, 20, 0.1);
   font-size: 16px;
 }
 
-.content button:nth-child(2){
+.content button:nth-child(2) {
   float: right;
 }
 
-.content ul{
+.content ul {
   padding: 0;
   list-style-type: none;
   margin: 30px 0;
 }
 
-.content li{
+.content li {
   padding: 15px 0;
   border-top: 1px solid #e2e2e2;
   color: #444;
 }
 
-.content li span{
+.content li span {
   float: right;
 }
 
-.content li h3{
+.content li h3 {
   display: inline-block;
   font-weight: normal;
   font-size: 22px;
 }
 
-.content input{
+.content input {
   width: 90%;
   padding: 10px 5%;
   border-radius: 10px;
@@ -101,13 +107,13 @@ main{
   margin: 10px 0;
 }
 
-.content input[type="submit"]:last-child{
+.content input[type='submit']:last-child {
   width: 150px;
   display: block;
   margin: 15px auto;
 }
 
-.remove{
+.remove {
   float: right;
   padding: 5px;
   background: #fff;
