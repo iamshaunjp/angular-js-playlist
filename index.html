@@ -1,10 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myNinjaApp">
   <head>
+    <base href="/">
     <title>TheNetNinja Angular Playlist</title>
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-route/angular-route.js"></script>
+    <script src="/node_modules/angular-animate/angular-animate.js"></script>
+    <script src="app.js"></script>
   </head>
   <body>
-
+    <header ng-include="'header.html'"></header>
+    <main ng-view></main>
   </body>
 </html>
